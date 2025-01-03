@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Bounty Jagat Methodology 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 align="center">Bug Bounty Jagat Methodology 2025</h1>
+            <div class="badges">
+                <a href="#" class="badge">Edition 2025</a>
+                <a href="#" class="badge">Author: JagatSingh</a>
+                <a href="https://www.youtube.com/@mjc-security" class="badge" target="_blank">YouTube</a>
+                <a href="https://t.me/MJCSECURITY" class="badge" target="_blank">Telegram</a>
+                <a href="https://www.linkedin.com/in/jagat-singh-b824701b8" class="badge" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Image Section -->
+    <section class="hero">
+        <div class="container">
+            <a href="https://youtube.com/shorts/v50yybr_xg4?feature=share" target="_blank">
+                <img src="https://media.licdn.com/dms/image/v2/C4D16AQF3sKj7dNYQOg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1661256639100?e=1741219200&v=beta&t=T1xZ_G06whi3rjVsfF3rjPDMjdyH2PMgD_jNQ7B70pk" alt="Bug Bounty Methodology 2025 Edition" class="hero-img">
+            </a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="container">
+            <p>Welcome to the <strong>Bug Bounty Jagat Methodology 2025 Edition</strong>! This methodology is a basic guide to help you kickstart your bug bounty journey...</p>
+        </div>
+    </section>
+
+    <!-- Table of Contents Section -->
+    <section class="toc">
+        <div class="container">
+            <h2>📜 Table of Contents</h2>
+            <ul>
+                <li><a href="#reconnaissance">1. Reconnaissance</a></li>
+                <li><a href="#discovery">2. Discovery</a></li>
+                <li><a href="#enumeration">3. Enumeration</a></li>
+                <li><a href="#testing">4. Vulnerability Testing</a></li>
+                <li><a href="#two-eye">5. The "Two-Eye" Approach 👀</a></li>
+                <li><a href="#poc">6. Proof of Concept (POC) Creation</a></li>
+                <li><a href="#reporting">7. Reporting</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sections (Reconnaissance, Discovery, etc.) -->
+    <section id="reconnaissance">
+        <div class="container">
+            <h2>1. Reconnaissance and Subdomain Enumeration</h2>
+            <p>Learn about passive and active subdomain enumeration using tools like <a href="https://github.com/projectdiscovery/subfinder">Subfinder</a>, <a href="https://github.com/OWASP/Amass">Amass</a>, and more.</p>
+            <pre><code>subfinder -d target.com -silent -all -recursive -o subfinder_subs.txt</code></pre>
+        </div>
+    </section>
+
+    <section id="discovery">
+        <div class="container">
+            <h2>2. Discovery and Probing</h2>
+            <p>Explore HTTP probing, JavaScript analysis, and advanced Google Dorking to discover hidden assets.</p>
+            <pre><code>httpx -l resolved_subs.txt -p 80,443,8080,8443 -silent -title -sc -ip -o live_websites.txt</code></pre>
+        </div>
+    </section>
+
+    <section id="enumeration">
+        <div class="container">
+            <h2>3. Advanced Enumeration Techniques</h2>
+            <p>In this section, we focus on parameter discovery, cloud asset enumeration, and content discovery.</p>
+            <pre><code>arjun -u "https://target.example.com" -m GET,POST --stable -o params.json</code></pre>
+        </div>
+    </section>
+
+    <section id="testing">
+        <div class="container">
+            <h2>4. Vulnerability Testing</h2>
+            <p>High-priority vulnerability testing using CSRF, LFI, RCE, and more.</p>
+            <pre><code>curl -X POST -F "file=@exploit.php" https://target.com/upload</code></pre>
+        </div>
+    </section>
+
+    <section id="two-eye">
+        <div class="container">
+            <h2>5. The "Two-Eye" Approach 👀</h2>
+            <p>Learn how to prioritize vulnerabilities and focus on impactful findings with the two-eye approach.</p>
+        </div>
+    </section>
+
+    <section id="poc">
+        <div class="container">
+            <h2>6. Proof of Concept (POC) Creation</h2>
+            <p>Learn how to create and document a Proof of Concept (POC) for vulnerabilities.</p>
+        </div>
+    </section>
+
+    <section id="reporting">
+        <div class="container">
+            <h2>7. Reporting</h2>
+            <p>Learn the best practices for writing detailed, clear, and actionable vulnerability reports.</p>
+            <pre><code># Vulnerability Report: [Title]</code></pre>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Jagat Singh (MJCSECURITY). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

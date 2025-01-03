@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.badges a {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.badges a:hover {
+    background-color: #2980b9;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #3498db;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Introduction Section */
+.intro {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Table of Contents */
+.toc {
+    background-color: #f0f0f0;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.toc ul {
+    list-style: none;
+}
+
+.toc ul li {
+    margin: 1rem 0;
+}
+
+.toc ul li a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.toc ul li a:hover {
+    color: #2980b9;
+}
+
+/* Content Sections */
+section {
+    padding: 3rem 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+pre {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
